@@ -1,5 +1,7 @@
 # SimDouban
 
+https://wenjieyan.com/douban
+
 一款基于 Vue.js 搭建的豆瓣仿站。
 
 * 使用**Swiper.js**完成首页轮播图
