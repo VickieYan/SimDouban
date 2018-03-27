@@ -34,17 +34,20 @@
 	</div>
 </template>
 <script>
-	import Myheader from '../components/header.vue'
-	import Findtitle from '../components/findtitle.vue'
-	import Broaditem from '../components/broaditem.vue'
-	export default{
-		components:{
-			Myheader,
-			Findtitle,
-			Broaditem
-		}
-	}
+import Myheader from "../components/header.vue";
+import Findtitle from "../components/findtitle.vue";
+import Broaditem from "../components/broaditem.vue";
+export default {
+  components: {
+    Myheader,
+    Findtitle,
+    Broaditem
+  }
+};
 </script>
 <style>
-	.broadcast{padding-top: 1.32rem;padding-bottom: 2rem}
+.broadcast {
+  padding-top: 1.32rem;
+  padding-bottom: 2rem;
+}
 </style>

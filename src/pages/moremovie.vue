@@ -11,50 +11,48 @@
 	</div>
 </template>
 <script>
-	import request from 'superagent'
-	import jsonp from 'superagent-jsonp'
-	import Movierecitem from'../components/movierecitem.vue'
-	import InfiniteLoading from 'vue-infinite-loading'
-	export default{
-		components:{
-			Movierecitem,
-			InfiniteLoading
-		},
-		data:function(){
-			return{
-				arrMovie:[],
-				arrMovie2:[],
-				list: []
-			}
-		},
-		mounted:function(){
-			request.get("http://api.douban.com/v2/movie/in_theaters?start=0&count=100")
-			.use(jsonp)
-			.end(
-				(err,res) => {
-				if(!err){
-					this.arrMovie = res.body.subjects;
-				}
-			})
-			// var _this=this;
-			// this.axios.get("/static/data/movie.json").then(function (res){
-			// 	_this.arrMovie=(res.data.subjects);
-			// })
-		},
-		methods: {
-		    onInfinite() {
-		      setTimeout(() => {
-		        const temp = [];
-		        for (let i = this.list.length + 1; i <= this.list.length + 20; i++) {
-		          temp.push(i);
-		        }
-		        this.list = this.list.concat(temp);
-		        this.$refs.infiniteLoading.$emit('$InfiniteLoading:loaded');
-		      }, 1000);
-		    }
-		}
-	}
+import request from "superagent";
+import jsonp from "superagent-jsonp";
+import Movierecitem from "../components/movierecitem.vue";
+import InfiniteLoading from "vue-infinite-loading";
+export default {
+  components: {
+    Movierecitem,
+    InfiniteLoading
+  },
+  data: function() {
+    return {
+      arrMovie: [],
+      arrMovie2: [],
+      list: []
+    };
+  },
+  mounted: function() {
+    request
+      .get("http://api.douban.com/v2/movie/in_theaters?start=0&count=100")
+      .use(jsonp)
+      .end((err, res) => {
+        if (!err) {
+          this.arrMovie = res.body.subjects;
+        }
+      });
+  },
+  methods: {
+    onInfinite() {
+      setTimeout(() => {
+        const temp = [];
+        for (let i = this.list.length + 1; i <= this.list.length + 20; i++) {
+          temp.push(i);
+        }
+        this.list = this.list.concat(temp);
+        this.$refs.infiniteLoading.$emit("$InfiniteLoading:loaded");
+      }, 1000);
+    }
+  }
+};
 </script>
 <style>
-	.moremovie{padding: 1.5rem .2rem 1.5rem 1rem;}
+.moremovie {
+  padding: 1.5rem 0.2rem 1.5rem 1rem;
+}
 </style>

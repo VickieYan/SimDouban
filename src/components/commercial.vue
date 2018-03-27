@@ -5,8 +5,22 @@
 	</div>
 </template>
 <style>
-	.commercial{margin-top: .5rem;background: white;text-align: left;}
-	.commercial .pic{width: 100%;height: 3.64rem;}
-	.commercial img{width: 100%;}
-	.commercial .txt{padding: .7rem .5rem;color: #4a4a4a;font-size: .56rem;line-height: .84rem;}
+.commercial {
+  margin-top: 0.5rem;
+  background: white;
+  text-align: left;
+}
+.commercial .pic {
+  width: 100%;
+  height: 3.64rem;
+}
+.commercial img {
+  width: 100%;
+}
+.commercial .txt {
+  padding: 0.7rem 0.5rem;
+  color: #4a4a4a;
+  font-size: 0.56rem;
+  line-height: 0.84rem;
+}
 </style>

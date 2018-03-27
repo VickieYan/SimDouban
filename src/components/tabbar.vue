@@ -23,35 +23,38 @@
 	</div>
 </template>
 <script>
-	import Item from './tabbarItem.vue'
-	export default{
-		components:{
-			Item
-		},
-		data:function(){
-			return{
-				selected:1,
-				arrRoutes:[
-					'/',
-					'/audio',
-					'/broadcast',
-					'/group',
-					'/user'
-				]
-			}
-		},
-		methods:{
-			fn1:function(val){
-				this.selected = val;
-				if(this.selected == 2){
-					this.$router.push(this.arrRoutes[this.selected-1]+"/0");
-					return;
-				}
-				this.$router.push(this.arrRoutes[this.selected-1])
-			}
-		}
-	}
+import Item from "./tabbarItem.vue";
+export default {
+  components: {
+    Item
+  },
+  data: function() {
+    return {
+      selected: 1,
+      arrRoutes: ["/", "/audio", "/broadcast", "/group", "/user"]
+    };
+  },
+  methods: {
+    fn1: function(val) {
+      this.selected = val;
+      if (this.selected == 2) {
+        this.$router.push(this.arrRoutes[this.selected - 1] + "/0");
+        return;
+      }
+      this.$router.push(this.arrRoutes[this.selected - 1]);
+    }
+  }
+};
 </script>
 <style>
-	.tabbar{width: 100%;height: 1.47rem;background: #f7f7f7;border-top: 0.01rem solid #eee;position: fixed;bottom: 0;opacity: .95;z-index: 100}
+.tabbar {
+  width: 100%;
+  height: 1.47rem;
+  background: #f7f7f7;
+  border-top: 0.01rem solid #eee;
+  position: fixed;
+  bottom: 0;
+  opacity: 0.95;
+  z-index: 100;
+}
 </style>

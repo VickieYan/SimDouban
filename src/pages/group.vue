@@ -10,20 +10,22 @@
 	</div>
 </template>
 <script>
-	import Myheader from '../components/header.vue'
-	import Grouptitle from '../components/grouptitle.vue'
-	import Special from '../components/special.vue'
-	import Film from '../components/film.vue'
-	export default{
-		components:{
-			Myheader,
-			Grouptitle,
-			Special,
-			Film
-		}
-
-	}
+import Myheader from "../components/header.vue";
+import Grouptitle from "../components/grouptitle.vue";
+import Special from "../components/special.vue";
+import Film from "../components/film.vue";
+export default {
+  components: {
+    Myheader,
+    Grouptitle,
+    Special,
+    Film
+  }
+};
 </script>
 <style>
-	.group{padding-top: 1.32rem;padding-bottom: 2rem}
+.group {
+  padding-top: 1.32rem;
+  padding-bottom: 2rem;
+}
 </style>

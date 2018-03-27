@@ -7,15 +7,17 @@
 	</div>
 </template>
 <script>
-	import Movierec from '../components/movierec.vue'
-	import Commercial from '../components/commercial.vue'
-	export default{
-		components:{
-			Movierec,
-			Commercial
-		}
-	}
+import Movierec from "../components/movierec.vue";
+import Commercial from "../components/commercial.vue";
+export default {
+  components: {
+    Movierec,
+    Commercial
+  }
+};
 </script>
 <style>
-	.read{padding-top: 1.32rem;}
+.read {
+  padding-top: 1.32rem;
+}
 </style>

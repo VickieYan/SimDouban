@@ -4,13 +4,16 @@
 	</div>
 </template>
 <script>
-	import Morerow from './morerow.vue'
-	export default{
-		components:{
-			Morerow
-		}
-	}
+import Morerow from "./morerow.vue";
+export default {
+  components: {
+    Morerow
+  }
+};
 </script>
 <style>
-	.more{margin-top: .5rem;background: white;}
+.more {
+  margin-top: 0.5rem;
+  background: white;
+}
 </style>

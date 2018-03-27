@@ -21,13 +21,17 @@
 
 </template>
 <script>
-	import Moreitem from './moreitem.vue'
-	export default{
-		components:{
-			Moreitem
-		}
-	}
+import Moreitem from "./moreitem.vue";
+export default {
+  components: {
+    Moreitem
+  }
+};
 </script>
 <style>
-	.morerow{width: 100%;height: 3.4rem;border-bottom: .02rem solid #e3e3e3}
+.morerow {
+  width: 100%;
+  height: 3.4rem;
+  border-bottom: 0.02rem solid #e3e3e3;
+}
 </style>

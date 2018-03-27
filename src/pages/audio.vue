@@ -9,15 +9,18 @@
 	</div>
 </template>
 <script>
-	import Myheader from '../components/header.vue'
-	import Submenu from '../components/submenu.vue'
-	export default{
-		components:{
-			Myheader,
-			Submenu
-		}
-	}
+import Myheader from "../components/header.vue";
+import Submenu from "../components/submenu.vue";
+export default {
+  components: {
+    Myheader,
+    Submenu
+  }
+};
 </script>
 <style>
-	.audio{margin-top: 1.32rem;padding-bottom: 2rem;}
+.audio {
+  margin-top: 1.32rem;
+  padding-bottom: 2rem;
+}
 </style>

@@ -9,20 +9,22 @@
 	</div>
 </template>
 <script>
-	import Myheader from '../components/header.vue'
-	import Information from '../components/information.vue'
-	import Remind from '../components/remind.vue'
-	import More from '../components/more.vue'
-	export default{
-		components:{
-			Myheader,
-			Information,
-			Remind,
-			More
-		}
-
-	}
+import Myheader from "../components/header.vue";
+import Information from "../components/information.vue";
+import Remind from "../components/remind.vue";
+import More from "../components/more.vue";
+export default {
+  components: {
+    Myheader,
+    Information,
+    Remind,
+    More
+  }
+};
 </script>
 <style>
-	.user{padding-top: 1.32rem;padding-bottom: 2rem}
+.user {
+  padding-top: 1.32rem;
+  padding-bottom: 2rem;
+}
 </style>

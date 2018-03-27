@@ -4,5 +4,9 @@
 	</div>
 </template>
 <style>
-	.reminditem p{font-size: .32rem;color: #e3e3e3;line-height: 1.52rem;}
+.reminditem p {
+  font-size: 0.32rem;
+  color: #e3e3e3;
+  line-height: 1.52rem;
+}
 </style>

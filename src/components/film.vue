@@ -40,14 +40,29 @@
 	</div>
 </template>
 <script>
-	import Filmitem from './filmitem.vue'
-	export default{
-		components:{
-			Filmitem
-		}
-	}
+import Filmitem from "./filmitem.vue";
+export default {
+  components: {
+    Filmitem
+  }
+};
 </script>
 <style>
-	.film{width: 11.18rem;margin: 0 auto;border-top: .03rem solid #ddd;margin-top: .88rem;}
-	.film .title{color: #424242;font-size: .46rem;padding:0 .66rem;font-weight: bold;background: #f8f8f8;width: 2.3rem;margin: -.4rem auto;height: .8rem;line-height: .8rem;}
+.film {
+  width: 11.18rem;
+  margin: 0 auto;
+  border-top: 0.03rem solid #ddd;
+  margin-top: 0.88rem;
+}
+.film .title {
+  color: #424242;
+  font-size: 0.46rem;
+  padding: 0 0.66rem;
+  font-weight: bold;
+  background: #f8f8f8;
+  width: 2.3rem;
+  margin: -0.4rem auto;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
 </style>
